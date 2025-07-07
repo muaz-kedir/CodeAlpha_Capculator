@@ -1,0 +1,83 @@
+/* === Global Styles === */
+body {
+    background-color: #010c01;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* === Calculator Container === */
+.calulator-container {
+    margin-top: 5rem;
+    width: 25rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom right, #22092C, #040D12, #082032);
+    border: 1px solid #010c01;
+    border-radius: 8px; /* optional: gives a nicer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* optional */
+}
+
+/* === Display Area === */
+.area {
+    width: 100%;
+    height: 10%;
+    padding: 3rem 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+/* === Button Grid === */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* === Rows of Buttons === */
+.firstRow,
+.secondRow,
+.thirdRow,
+.fourthRow,
+.fifthRow {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* === Buttons === */
+.btn {
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+
+    background: linear-gradient(to bottom right, #1B2430, #3D0000);
+    color: #fff;
+    border: 1px solid #334756;
+    outline: none;
+    transition: transform 0.1s ease;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+ 
